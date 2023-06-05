@@ -1,0 +1,19 @@
+<app-header [page]="page"></app-header>
+
+<ion-content>
+  <ion-list lines="full">
+
+    <ion-list-header>
+      <ion-label>Datos de Nacimiento</ion-label>
+    </ion-list-header>
+
+
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime [preferWheel]="true" [value]="birthday.toISOString()">
+      </ion-datetime>
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>

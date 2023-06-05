@@ -1,0 +1,21 @@
+<app-header [page]="page"></app-header>
+
+
+<ion-content>
+  <ion-chip color="primary" outline="true" *ngFor="let item of [1,1,1,1,1]">
+    <ion-avatar>
+      <img src="/assets/stan-lee.jpg" alt="avatar">
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+
+  <ion-list lines="full">
+    <ion-item *ngFor="let item of [1,1,1,1,1]">
+      <ion-label>Stan Lee</ion-label>
+      <ion-avatar slot="end">
+        <img src="/assets/stan-lee.jpg" alt="avatar">
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,16 @@
+<app-header [page]="page"></app-header>
+
+
+<ion-content>
+
+  <ion-list lines="full">
+    <ion-item *ngFor="let type of types">
+      <ion-checkbox [color]="type.name" (click)="onClick($event)" [(ngModel)]="type.selected" slot="end"></ion-checkbox>
+      <ion-label>{{type.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="onViewData()" expand="block">
+    Ver data
+  </ion-button>
+</ion-content>
